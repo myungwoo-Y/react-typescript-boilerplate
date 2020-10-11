@@ -9,13 +9,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 아래 참고 사이트의 `eslint config`를 따라하여 진행하였습니다.
 다른점이 있다면 `eslint-plugin-header` 를 삭제한 버전입니다.
 
-참고 사이트 링크
+[참고 사이트 링크][https://dev.to/ziker22/ultimate-vs-code-react-typescript-code-quality-setup-2020-29gm]
 
 ### folder structure
 
 아래 참고 사이트의 폴더 구조를 따라하여 진행하였습니다.
 
-참고 사이트 링크
+[참고 사이트 링크][https://dev.to/farazamiruddin/an-opinionated-guide-to-react-folder-structure-file-naming-1l7i]
+
 
 각각의 폴더가 의미하는건 다음과 같습니다.
 
@@ -33,7 +34,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
   재사용 가능한 컴포넌트들에 대한 코드를 넣어줍니다. 
   
-  `components`는 `page`에서 호출되어 사용되며 예로는 `form`, `button`, `carousel` 등이 될 수 있습니다.
+  `component`는 `page`에서 호출되어 사용되며 예로는 `form`, `button`, `carousel` 등이 될 수 있습니다.
 
 - `pages`
 

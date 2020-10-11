@@ -1,44 +1,82 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## boilerplate 설명
+
+기본적으로 CRA의 typescript template를 이용하여 생성한 boilerplate 입니다.
+
+### eslint
+
+아래 참고 사이트의 `eslint config`를 따라하여 진행하였습니다.
+다른점이 있다면 `eslint-plugin-header` 를 삭제한 버전입니다.
+
+참고 사이트 링크
+
+### folder structure
+
+아래 참고 사이트의 폴더 구조를 따라하여 진행하였습니다.
+
+참고 사이트 링크
+
+각각의 폴더가 의미하는건 다음과 같습니다.
+
+- `assets`
+
+  이미지나 로고 같은 사진 파일들을 저장합니다.
+ 
+- `lib`
+
+  다른 라이브러리를 사용할 때 사용합니다.
+  
+  그 라이브러리에 대한 `init` 코드와 같은 로직들을 집어 넣어 줍니다.
+  
+- `components`
+
+  재사용 가능한 컴포넌트들에 대한 코드를 넣어줍니다. 
+  
+  `components`는 `page`에서 호출되어 사용되며 예로는 `form`, `button`, `carousel` 등이 될 수 있습니다.
+
+- `pages`
+
+  `page`들 역시 `component`라고 할 수 있습니다.
+
+  다른점이라면 한 화면에 대한 모든 로직들이 존재하며 라우터에게 호출됩니다.
+   
+- `services`
+
+  비지니스 로직들이 존재하는 폴더입니다.
+  
+  `lib`와 다른점은 다른 라이브러리를 사용하기 위한 로직이 아니라는 것입니다.  
+  
+  `api`를 사용하기 위한 로직들이나, `Date`나 `String Format` 로직들이 존재 할 수 있습니다.
+  
+- `AppRoutes`
+
+  `CRA`의 App 컴포넌트 역할을 합니다.
+  
+  다만 이 컴포넌트에는 라우팅에 관한 로직들만 존재하기 때문에 이름에 `Routes`를 추가 했습니다.
+
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+`3000` 포트로 서버를 실행시켜줍니다.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+테스트를 실행시켜줍니다.
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+build 파일을 생성해 줍니다.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### `yarn eslint`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`.eslintrc` 에 맞추어 어떤 파일에서 rule을 어긴 문법이 있는지 알려줍니다.
 
-### `yarn eject`
+### `yarn eslint:fix`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`rule` 에 맞추어 모든 파일들을 포맷팅합니다.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

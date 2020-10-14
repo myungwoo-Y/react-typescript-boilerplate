@@ -118,6 +118,7 @@
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "off",
       "semi" : "warn",
-      "yoda": "warn",
+      "object-curly-spacing" : ["error", "always"],
+      "yoda": "warn"
     }
   }
